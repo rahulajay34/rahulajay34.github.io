@@ -157,6 +157,7 @@ padding: 10px;
 }
 
 #projects{
+    position: relative;
     width: 100%;
     background-color: white;
     display: grid;
@@ -179,10 +180,10 @@ padding: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
-    align-items: center;
 }
 #projectTiles>#projectIMG img{
-    height: 400px;
+    height: 100%;
+    width: 100%;
 }
 #projectDetails{
     padding: 15px;
@@ -192,7 +193,7 @@ padding: 10px;
     margin-bottom: 15px;
 }
 #projectDetails p{
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 #projectDetails a{
     text-decoration: underline;
@@ -255,6 +256,9 @@ padding: 10px;
   .button-48 span {
     z-index: 1;
     position: relative;
+  }
+  a{
+    text-decoration: none;
   }
 @media all and (min-width: 320px) and (max-width: 767px) {
     #nav{
@@ -325,6 +329,31 @@ padding: 10px;
         gap: 30px;
     }
     
+    #projects{
+        gap: 40px;   
+    }
+    #projects>div{
+        height: 600px;
+    }
+    #projectTiles{
+       grid-template-columns: repeat(1,1fr);
+        
+    }
+    #projectDetails{
+        padding: 13px;
+        text-align: center;
+    }
+    #projectDetails h2{
+        margin-bottom: 10px;
+    }
+    #projectDetails p{
+        margin-bottom: 10px;
+    }
+
+    #projectTiles>#projectIMG img{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -379,5 +408,31 @@ padding: 10px;
         font-size: 15px;
         font-weight: bold;
         margin-bottom: 15px;
+    }
+
+    #projects{
+        gap: 40px;   
+    }
+    #projects>div{
+        height: 600px;
+    }
+    #projectTiles{
+       grid-template-columns: repeat(1,1fr);
+        
+    }
+    #projectDetails{
+        padding: 13px;
+        text-align: center;
+    }
+    #projectDetails h2{
+        margin-bottom: 10px;
+    }
+    #projectDetails p{
+        margin-bottom: 10px;
+    }
+
+    #projectTiles>#projectIMG img{
+        height: 100%;
+        width: 100%;
     }
 }
