@@ -4,6 +4,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: antiquewhite;
 }
@@ -27,6 +30,9 @@ body{
 a:hover{
     color: red;
     transition: 0.3s;
+}
+a>p::after{
+    transition: 0.5s;
 }
 #navRight{
     font-size: 18px;
@@ -57,7 +63,8 @@ a:hover{
     width: 300px;
     height: 400px;
     margin: auto;
-    
+    background-image: "rahulajay34.github.io\PP comp.jpg";
+    background-color: red;
 }
 #profileIMG{
     width: 100%;
