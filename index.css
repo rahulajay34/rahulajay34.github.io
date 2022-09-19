@@ -44,9 +44,10 @@ a>p::after{
     flex-direction: row-reverse;
 }
 #profile{
+    background-image: url("img/grad_brown.gif");
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: white;
+    /* background-color: white; */
     position: relative;
     border: 1px solid;
     width: 100%;
