@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d933cbcb33.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   </head>
   <body>
     <div id="nav">
@@ -26,6 +35,7 @@
         <p id="FSWD">Full Stack Web Developer</p>
         <a
           href="https://drive.google.com/file/d/1k3qp3w_jRRnp_Rb3jtxWwCKQdxDD0mta/view?usp=sharing"
+          target="_blank"
           ><button id="resumeButton">Resume</button></a
         >
       </div>
@@ -42,6 +52,10 @@
         clean, reusable, optimised code. Skilled at building and maintaining
         backend web APIs. Well organized and hardworking collaborator. Looking
         forward to joining a progressive and challenging work environment.
+      </p>
+      <p id="soft-skills">
+        Some Soft Skills - Communication, Interpersonal skill, Teamwork,
+        Problem-solving
       </p>
       <div id="aboutBottom">
         <p>📌 Gurgaon, Haryana</p>
@@ -115,13 +129,16 @@
             <span class="text"
               ><a
                 href="https://venerable-pudding-fbcabd.netlify.app/nav+home.html"
+                target="_blank"
                 >Live Link</a
               ></span
             >
           </button>
           <button class="button-48" role="button">
             <span class="text"
-              ><a href="https://github.com/282Manoj/Meanbuy.com2"
+              ><a
+                href="https://github.com/282Manoj/Meanbuy.com2"
+                target="_blank"
                 >Source Link</a
               ></span
             >
@@ -129,14 +146,62 @@
         </div>
       </div>
     </div>
-    <div id="contactMe">
-      <h1>Contact me</h1>
-      <p>Email - rahulajay34@gmail.com</p>
-      <p>Phone - +91 92054 43514</p>
-      <p>
-        <a href="https://www.linkedin.com/in/rahul-singh-49b059119">Linkedin</a>
-      </p>
+    <h2 id="GC">GitHub Calendar</h2>
+    <div id="calendar">
+      <h1>GitHubCalendar</h1>
+      <!-- githubCalender -->
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> rahulajay34@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9205443514</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/rahul-singh-49b059119"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/rahulajay34" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1k3qp3w_jRRnp_Rb3jtxWwCKQdxDD0mta/view?usp=sharing"
+              target="_blank"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+<script>
+  GitHubCalendar("#calendar", "your-username");
+  // or enable responsive functionality
+  GitHubCalendar("#calendar", "rahulajay34", { responsive: true });
+</script>
 <script src="index.js"></script>
